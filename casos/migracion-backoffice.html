@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Migración del backoffice · Jessica Quiroga</title>
+  <meta name="title-es" content="Migración del backoffice · Jessica Quiroga">
+  <meta name="title-en" content="Back-office migration · Jessica Quiroga">
+  <meta name="description" content="Caso de Service Design: estrategia de migración por olas de riesgo y modelo de gobernanza de roles y permisos para el backoffice interno de Monchis.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='%234F46D8'%3E%3Cellipse cx='16' cy='16' rx='3.6' ry='14' transform='rotate(0 16 16)'/%3E%3Cellipse cx='16' cy='16' rx='3.6' ry='14' transform='rotate(45 16 16)'/%3E%3Cellipse cx='16' cy='16' rx='3.6' ry='14' transform='rotate(90 16 16)'/%3E%3Cellipse cx='16' cy='16' rx='3.6' ry='14' transform='rotate(135 16 16)'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,300..900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><svg class="mark-flower" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="12" rx="2.6" ry="10.5" transform="rotate(0 12 12)"/><ellipse cx="12" cy="12" rx="2.6" ry="10.5" transform="rotate(45 12 12)"/><ellipse cx="12" cy="12" rx="2.6" ry="10.5" transform="rotate(90 12 12)"/><ellipse cx="12" cy="12" rx="2.6" ry="10.5" transform="rotate(135 12 12)"/></svg>Jessica Quiroga</a>
+    <nav class="nav">
+      <a href="../index.html"><span lang="es">Home</span><span lang="en">Home</span></a>
+      <a href="../index.html#casos" aria-current="page"><span lang="es">Casos</span><span lang="en">Cases</span></a>
+      <a href="../sobre-mi.html"><span lang="es">Sobre mí</span><span lang="en">About</span></a>
+    </nav>
+    <div class="head-right"><div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ESP</button>
+      <button type="button" data-lang="en" aria-pressed="false">ENG</button>
+    </div><a class="head-cta" href="https://www.linkedin.com/in/jessica-giovanna-quiroga-quir%C3%B3s-29a357232" target="_blank" rel="noopener"><span lang="es">Escríbeme</span><span lang="en">Get in touch</span> ↗</a></div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap case-tabs">
+    <div class="chips">
+      <a class="chip violet" href="migracion-backoffice.html"><span class="n">01</span><span lang="es">Migración backoffice</span><span lang="en">Back-office migration</span></a>
+      <a class="chip" href="promociones.html"><span class="n">02</span><span lang="es">Promociones</span><span lang="en">Promotions</span></a>
+      <a class="chip" href="modelo-atencion.html"><span class="n">03</span><span lang="es">Modelo de atención</span><span lang="en">Support model</span></a>
+      <a class="chip" href="medicina-uniandes.html"><span class="n">04</span>Medicina Uniandes</a>
+      <a class="chip" href="vinculacion.html"><span class="n">05</span><span lang="es">Trámite de vinculación</span><span lang="en">Onboarding process</span></a>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="wrap case-hero has-doodles">
+    <div>
+      <p class="eyebrow accent">
+        <span lang="es">Caso 01 · Service Designer Ssr. · Monchis · 2026</span>
+        <span lang="en">Case 01 · Service Designer · Monchis · 2026</span>
+      </p>
+      <h1>
+        <span lang="es">Plantear una migración del <span class="pill">backoffice</span> que no frene la operación.</span>
+        <span lang="en">Planning a <span class="pill">back-office</span> migration that doesn't stop operations.</span>
+      </h1>
+      <p class="lead">
+        <span lang="es">Un solo discovery para resolver dos retos a la vez: cómo migrar el backoffice interno de Monchis a una nueva plataforma unificada sin poner en riesgo las órdenes en vivo, y quién debería poder ver y editar qué.</span>
+        <span lang="en">One discovery to solve two challenges at once: how to move Monchis' internal back office to a new unified platform without putting live orders at risk, and who should be able to see and edit what.</span>
+      </p>
+    </div>
+    <dl class="facts">
+      <div><dt><span lang="es">Rol</span><span lang="en">Role</span></dt><dd><span lang="es">Service Designer Ssr. · lideré y ejecuté el discovery</span><span lang="en">Service Designer · led and ran the discovery</span></dd></div>
+      <div><dt><span lang="es">Equipo</span><span lang="en">Team</span></dt><dd><span lang="es">Service Design, con Producto y Tecnología</span><span lang="en">Service Design, with Product and Engineering</span></dd></div>
+      <div><dt><span lang="es">Método</span><span lang="en">Method</span></dt><dd><span lang="es">Mesas de trabajo con 7 áreas, auditoría funcional, escenarios de migración y co-diseño con Producto y Tecnología</span><span lang="en">Working sessions with 7 teams, functional audit, migration scenarios and co-design with Product and Engineering</span></dd></div>
+      <div><dt><span lang="es">Entregable</span><span lang="en">Deliverable</span></dt><dd><span lang="es">Artefacto interactivo con el detalle de qué cambiar en cada módulo, roadmap de migración por olas y matriz de 13 roles × 4 niveles de permiso</span><span lang="en">Interactive artefact detailing what to change in each module, wave-based migration roadmap and a 13 roles × 4 permission levels matrix</span></dd></div>
+    </dl>
+  </section>
+
+  <!-- ===== CIFRAS ===== -->
+  
+
+  <section class="section wrap">
+    <p class="eyebrow"><span lang="es">Contexto y reto</span><span lang="en">Context and challenge</span></p>
+    <div class="ctx-head">
+      <div>
+    <h2 class="h2"><span lang="es">Un mandato corporativo y un sistema que nadie quería copiar tal cual.</span><span lang="en">A corporate mandate and a system nobody wanted to copy as it was.</span></h2>
+    <p class="body"><span lang="es">Por decisión corporativa, el backoffice debía migrar a una nueva plataforma unificada. El reto era hacerlo sin poner en riesgo la operación diaria y aprovechar la migración para ordenar quién podía ver y editar qué.</span><span lang="en">By corporate decision, the back office had to move to a new unified platform. The challenge was doing it without risking daily operations, and using the migration to sort out who could see and edit what.</span></p>
+      </div>
+      <div class="ctx-art has-doodles"><i class="doodle v" data-d="rings" style="--r:0deg;--d:0s"></i></div>
+    </div>
+    <div class="duo">
+      <div class="box reveal"><p class="eyebrow accent"><span lang="es">Reto 01</span><span lang="en">Challenge 01</span></p><h4><span lang="es">Migrar sin copy-paste</span><span lang="en">Migrate without copy-paste</span></h4><p><span lang="es">Replicar el sistema tal cual significaba llevar la deuda técnica a la nueva plataforma y arriesgar las órdenes en vivo.</span><span lang="en">Replicating the system as-is meant carrying technical debt into the new platform and risking live orders.</span></p></div>
+      <div class="box reveal"><p class="eyebrow accent"><span lang="es">Reto 02</span><span lang="en">Challenge 02</span></p><h4><span lang="es">Ordenar los accesos</span><span lang="en">Bring order to access</span></h4><p><span lang="es">Casi todos los perfiles tenían visibilidad y edición total, con riesgo constante de alterar o exponer datos sensibles.</span><span lang="en">Almost every profile had full visibility and editing rights, with a constant risk of altering or exposing sensitive data.</span></p></div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <p class="eyebrow"><span lang="es">Proceso y mi aporte</span><span lang="en">Process and my role</span></p>
+    <h2 class="h2"><span lang="es">Una sola investigación para resolver dos frentes en paralelo.</span><span lang="en">One research effort to solve two tracks in parallel.</span></h2>
+    <div class="steps">
+      <div class="step reveal"><p class="eyebrow">01</p><h4><span lang="es">Discovery con 7 áreas</span><span lang="en">Discovery with 7 teams</span></h4><p><span lang="es">Lideré y facilité las sesiones con los equipos que operan la plataforma a diario para entender usos, dolores y accesos.</span><span lang="en">I led and facilitated sessions with the teams who use the platform daily to understand uses, pains and access needs.</span></p></div>
+      <div class="step reveal"><p class="eyebrow">02</p><h4><span lang="es">Metodología de dos frentes</span><span lang="en">Two-track method</span></h4><p><span lang="es">Diseñé la forma de relevar al mismo tiempo la deuda funcional de las pantallas y las necesidades de acceso de cada perfil.</span><span lang="en">I designed a way to capture the screens' functional debt and each profile's access needs at the same time.</span></p></div>
+      <div class="step reveal"><p class="eyebrow">03</p><h4><span lang="es">Escenarios y modelo futuro</span><span lang="en">Scenarios and future model</span></h4><p><span lang="es">Traduje los hallazgos en escenarios de migración y en un nuevo modelo de roles y permisos.</span><span lang="en">I turned the findings into migration scenarios and a new roles and permissions model.</span></p></div>
+      <div class="step reveal"><p class="eyebrow">04</p><h4><span lang="es">Alineación con Producto y Tecnología</span><span lang="en">Alignment with Product and Engineering</span></h4><p><span lang="es">Validé la propuesta con los líderes y construí el artefacto interactivo que condensa qué cambiar en cada módulo.</span><span lang="en">I validated the proposal with leadership and built the interactive artefact detailing what to change in each module.</span></p></div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <p class="eyebrow"><span lang="es">Hallazgos clave</span><span lang="en">Key findings</span></p>
+    <h2 class="h2"><span lang="es">Los números demostraron que copiar el sistema era inviable.</span><span lang="en">The numbers proved that copying the system was not viable.</span></h2>
+    <div class="finds finds-k">
+      <div class="find reveal"><span class="chip lav"><span lang="es">Migración</span><span lang="en">Migration</span></span><h4><span lang="es">Un falso orden</span><span lang="en">A false sense of order</span></h4><div class="k">43</div><p><span lang="es">Roles creados, pero sin fronteras claras casi todos operaban como Super Admin.</span><span lang="en">Roles existed, but without clear boundaries almost everyone worked as Super Admin.</span></p></div>
+      <div class="find reveal"><span class="chip lav"><span lang="es">Migración</span><span lang="en">Migration</span></span><h4><span lang="es">Deuda UX visible</span><span lang="en">Visible UX debt</span></h4><div class="k">174</div><p><span lang="es">Cambios identificados entre mejoras y funcionalidades nuevas: un copy-paste no era opción.</span><span lang="en">Changes identified across improvements and new features: a copy-paste was not an option.</span></p></div>
+      <div class="find reveal"><span class="chip lav"><span lang="es">Migración</span><span lang="en">Migration</span></span><h4><span lang="es">Alcance depurado</span><span lang="en">A cleaner scope</span></h4><div class="k">8<small>/27</small></div><p><span lang="es">Secciones que ningún equipo usaba y se pudieron descartar antes de construir.</span><span lang="en">Sections no team used, which could be dropped before building.</span></p></div>
+      <div class="find reveal"><span class="chip peach"><span lang="es">Roles</span><span lang="en">Roles</span></span><h4><span lang="es">Riesgo concentrado</span><span lang="en">Concentrated risk</span></h4><div class="k"><span lang="es">Pocas</span><span lang="en">Few</span></div><p><span lang="es">Secciones sostenían la operación en vivo y las usaban varios equipos a la vez.</span><span lang="en">Sections held up live operations and were used by several teams at once.</span></p></div>
+      <div class="find reveal"><span class="chip peach"><span lang="es">Roles</span><span lang="en">Roles</span></span><h4><span lang="es">Sobreexposición</span><span lang="en">Overexposure</span></h4><div class="k"><span lang="es">Perfiles</span><span lang="en">Profiles</span></div><p><span lang="es">operativos podían ver y editar información financiera y legal que no necesitaban.</span><span lang="en">in operations could see and edit financial and legal data they didn't need.</span></p></div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <p class="eyebrow accent"><span lang="es">Propuesta</span><span lang="en">Proposal</span></p>
+    <h2 class="h2"><span lang="es">Dos propuestas para migrar con orden y seguridad.</span><span lang="en">Two proposals to migrate safely and in order.</span></h2>
+
+    <div class="prop reveal">
+      <div class="prop-head"><p class="eyebrow"><span lang="es">Propuesta 01</span><span lang="en">Proposal 01</span></p><h4><span lang="es">Migración por olas de riesgo</span><span lang="en">Migration in risk waves</span></h4><p><span lang="es">Planteé tres escenarios de migración: por olas de riesgo, por modo de uso y módulo a módulo. Recomendé el de olas porque era el de menor riesgo: empieza por lo que usa un solo equipo y tiene pocos cambios, y deja la operación en vivo para el final.</span><span lang="en">I laid out three migration scenarios: by risk waves, by usage mode and module by module. I recommended the wave approach as the lowest-risk option: it starts with areas used by a single team with few changes, and leaves live operations for last.</span></p></div>
+      <div class="risk"><span><span lang="es">Menor riesgo</span><span lang="en">Lower risk</span></span><i></i><span><span lang="es">Mayor riesgo</span><span lang="en">Higher risk</span></span></div>
+      <div class="wave-cols mini"><div class="wave w1"><p class="eyebrow"><span lang="es">Ola 1</span><span lang="en">Wave 1</span></p><h5><span lang="es">Facturación</span><span lang="en">Invoicing</span></h5></div><div class="wave w2"><p class="eyebrow"><span lang="es">Ola 2</span><span lang="en">Wave 2</span></p><h5><span lang="es">Liquidaciones</span><span lang="en">Settlements</span></h5></div><div class="wave w3"><p class="eyebrow"><span lang="es">Ola 3</span><span lang="en">Wave 3</span></p><h5><span lang="es">Fidelización</span><span lang="en">Loyalty</span></h5></div><div class="wave w4"><p class="eyebrow"><span lang="es">Ola 4</span><span lang="en">Wave 4</span></p><h5><span lang="es">Gestión</span><span lang="en">Management</span></h5></div><div class="wave w5"><p class="eyebrow"><span lang="es">Ola 5</span><span lang="en">Wave 5</span></p><h5><span lang="es">Operación activa</span><span lang="en">Live operations</span></h5></div></div>
+    </div>
+
+    <div class="prop reveal">
+      <div class="prop-head"><p class="eyebrow"><span lang="es">Propuesta 02</span><span lang="en">Proposal 02</span></p><h4><span lang="es">De 43 roles a 13, con 4 niveles de acceso</span><span lang="en">From 43 roles to 13, with 4 access levels</span></h4><p><span lang="es">Un modelo de gobernanza basado en el mínimo privilegio: cada perfil accede solo a donde opera a diario, y cada sección tiene un nivel de permiso por rol.</span><span lang="en">A least-privilege governance model: each profile only reaches where it works daily, and each section has a permission level per role.</span></p></div>
+      <div class="rgroups"><div class="rg"><b>3</b><span lang="es">Supervisión</span><span lang="en">Supervision</span></div><div class="rg"><b>4</b><span lang="es">Operativos</span><span lang="en">Operations</span></div><div class="rg"><b>3</b><span lang="es">Negocio</span><span lang="en">Business</span></div><div class="rg"><b>1</b><span lang="es">Técnico</span><span lang="en">Technical</span></div><div class="rg"><b>2</b><span lang="es">Generales</span><span lang="en">General</span></div></div>
+      <div class="levels"><div class="level l0"><h5><span lang="es">Sin acceso</span><span lang="en">No access</span></h5><p><span lang="es">El módulo queda oculto.</span><span lang="en">The module is hidden.</span></p></div><div class="level l1"><h5><span lang="es">Solo lectura</span><span lang="en">Read-only</span></h5><p><span lang="es">Consultar, filtrar y exportar.</span><span lang="en">View, filter and export.</span></p></div><div class="level l2"><h5><span lang="es">Edición acotada</span><span lang="en">Scoped editing</span></h5><p><span lang="es">Cambios puntuales sin tocar la configuración.</span><span lang="en">Specific changes, no global settings.</span></p></div><div class="level l3"><h5><span lang="es">Edición total</span><span lang="en">Full editing</span></h5><p><span lang="es">Crear, configurar y eliminar.</span><span lang="en">Create, configure and delete.</span></p></div></div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <p class="eyebrow"><span lang="es">El artefacto</span><span lang="en">The artefact</span></p>
+    <h2 class="h2"><span lang="es">De las entrevistas a un entregable que Producto puede <span class="nw">consumir.</span></span><span lang="en">From interviews to a deliverable Product can actually <span class="nw">use.</span></span></h2>
+    <div class="art-top">
+        <div class="art-copy">
+        <p class="body"><span lang="es">Con apoyo de IA convertí el discovery en un artefacto navegable: cada módulo del backoffice con su caso de uso, su criticidad y la decisión de qué mantener, mejorar o construir, junto con el modelo de roles y permisos.</span><span lang="en">With AI support, I turned the discovery into a navigable artefact: every back-office module with its use case, criticality and the decision on what to keep, improve or build, together with the roles and permissions model.</span></p>
+        <p class="art-note"><span lang="es">Capturas con información sensible difuminada.</span><span lang="en">Screenshots with sensitive information blurred.</span></p>
+        </div>
+        <ul class="art-points">
+          <li><b>01</b><span><span lang="es">Sintetiza entrevistas con 7 áreas en una fuente de verdad.</span><span lang="en">Condenses 7 teams’ interviews into one source of truth.</span></span></li>
+          <li><b>02</b><span><span lang="es">Clasifica cada pantalla en mantener, mejorar o construir.</span><span lang="en">Tags every screen as keep, improve or build.</span></span></li>
+          <li><b>03</b><span><span lang="es">Sirve de base para que Producto escriba sus PRDs.</span><span lang="en">Serves as the basis for Product to write its PRDs.</span></span></li>
+        </ul>
+    </div>
+    <div class="art-row">
+      <figure class="browser reveal"><div class="browser-bar"><i></i><i></i><i></i></div><img src="../assets/img/mig-artefacto-modulo.jpg" alt="Ficha de un módulo con la decisión de mantener, mejorar o construir"><figcaption><span lang="es">Ficha de módulo</span><span lang="en">Module card</span></figcaption></figure>
+      <figure class="browser reveal"><div class="browser-bar"><i></i><i></i><i></i></div><img src="../assets/img/mig-artefacto-niveles.jpg" alt="Niveles de acceso del modelo de gobernanza"><figcaption><span lang="es">4 niveles de acceso</span><span lang="en">4 access levels</span></figcaption></figure>
+      <figure class="browser reveal"><div class="browser-bar"><i></i><i></i><i></i></div><img src="../assets/img/mig-artefacto-roles.jpg" alt="Fichas de rol con secciones y permisos"><figcaption><span lang="es">Fichas de rol con sus permisos</span><span lang="en">Role cards with their permissions</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section wrap has-burst">
+    <svg class="burst" viewBox="0 0 100 100" aria-hidden="true"><polygon points="44.44,22.56 45.76,0.18 54.24,0.18 55.56,22.56 55.36,22.52 65.14,2.35 72.99,5.60 65.64,26.78 65.47,26.66 82.23,11.77 88.23,17.77 73.34,34.53 73.22,34.36 94.40,27.01 97.65,34.86 77.48,44.64 77.44,44.44 99.82,45.76 99.82,54.24 77.44,55.56 77.48,55.36 97.65,65.14 94.40,72.99 73.22,65.64 73.34,65.47 88.23,82.23 82.23,88.23 65.47,73.34 65.64,73.22 72.99,94.40 65.14,97.65 55.36,77.48 55.56,77.44 54.24,99.82 45.76,99.82 44.44,77.44 44.64,77.48 34.86,97.65 27.01,94.40 34.36,73.22 34.53,73.34 17.77,88.23 11.77,82.23 26.66,65.47 26.78,65.64 5.60,72.99 2.35,65.14 22.52,55.36 22.56,55.56 0.18,54.24 0.18,45.76 22.56,44.44 22.52,44.64 2.35,34.86 5.60,27.01 26.78,34.36 26.66,34.53 11.77,17.77 17.77,11.77 34.53,26.66 34.36,26.78 27.01,5.60 34.86,2.35 44.64,22.52" fill="#6B4EFF"/><circle cx="50" cy="50" r="29" fill="#6B4EFF"/></svg>
+    <p class="eyebrow"><span lang="es">Entregables y próximos pasos</span><span lang="en">Deliverables and next steps</span></p>
+    <h2 class="h2"><span lang="es">Todo listo para que Producto diera el siguiente paso.</span><span lang="en">Everything ready for Product to take the next step.</span></h2>
+    <div class="duo">
+      <div class="box reveal"><p class="eyebrow accent"><span lang="es">Entregado</span><span lang="en">Delivered</span></p><h4><span lang="es">Insumos para decidir y diseñar</span><span lang="en">Inputs to decide and design</span></h4><ul class="plain"><li><span lang="es">Artefacto interactivo con qué cambiar en cada módulo</span><span lang="en">Interactive artefact with what to change in each module</span></li><li><span lang="es">Tres escenarios de migración con uno recomendado</span><span lang="en">Three migration scenarios with one recommended</span></li><li><span lang="es">Modelo de 13 roles y matriz de permisos</span><span lang="en">13-role model and permissions matrix</span></li></ul></div>
+      <div class="box reveal"><p class="eyebrow accent"><span lang="es">Próximos pasos propuestos</span><span lang="en">Proposed next steps</span></p><h4><span lang="es">Lo que seguía para Producto</span><span lang="en">What came next for Product</span></h4><ul class="plain"><li><span lang="es">Elegir el escenario de migración</span><span lang="en">Choose the migration scenario</span></li><li><span lang="es">Diseñar la nueva arquitectura de información</span><span lang="en">Design the new information architecture</span></li><li><span lang="es">Planear los siguientes trimestres</span><span lang="en">Plan the coming quarters</span></li></ul></div>
+    </div>
+    <div class="disclaimer"><span aria-hidden="true">✳︎</span><span><span lang="es">El proyecto no alcanzó a implementarse por el cierre de operaciones de la empresa. Por confidencialidad, se presenta de forma resumida.</span><span lang="en">The project wasn't implemented due to the company winding down operations. For confidentiality, it's presented in summary form.</span></span></div>
+  </section>
+
+  <div class="wrap case-nav">
+    <a class="btn" href="../index.html#casos">← <span lang="es">Todos los casos</span><span lang="en">All cases</span></a>
+    <a class="btn solid" href="promociones.html"><span lang="es">Caso 02 · Promociones</span><span lang="en">Case 02 · Promotions</span> →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="eyebrow">Jessica Quiroga · Bogotá, Colombia</span>
+    <span class="eyebrow">© <span data-year>2026</span></span>
+  </div>
+</footer>
+
+<script src="../assets/main.js"></script>
+</body>
+</html>
