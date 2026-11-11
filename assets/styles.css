@@ -1183,3 +1183,15 @@ ul.plain li::before { content: ""; position: absolute; left: 0; top: .6em; width
 .lang button:hover{color:#111}
 .lang-sep{font-family:'DM Mono',monospace;font-size:13px;color:rgba(17,17,17,.3)}
 .head-right{gap:18px}
+
+/* ---- Pista de scroll hacia Casos ---- */
+.scroll-hint{position:fixed;right:clamp(16px,3vw,40px);bottom:clamp(16px,3vw,32px);z-index:40;display:inline-flex;align-items:center;gap:10px;padding:10px 12px 10px 16px;border-radius:999px;background:#111;color:#fff;text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;transition:opacity .35s,transform .35s,background .2s}
+.scroll-hint svg{width:18px;height:18px;fill:none;stroke:var(--peach);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;animation:hintBob 1.6s ease-in-out infinite}
+.scroll-hint:hover{background:var(--orange)}
+.scroll-hint.is-hidden{opacity:0;transform:translateY(12px);pointer-events:none}
+@keyframes hintBob{0%,100%{transform:translateY(-2px)}50%{transform:translateY(3px)}}
+@media (prefers-reduced-motion:reduce){.scroll-hint svg{animation:none}}
+.scroll-hint{background:none;padding:8px;gap:0;border-radius:0}
+.scroll-hint:hover{background:none}
+.scroll-hint svg{width:28px;height:28px;stroke:#111;stroke-width:1.6;opacity:.55;transition:opacity .2s}
+.scroll-hint:hover svg{opacity:1;stroke:var(--orange)}

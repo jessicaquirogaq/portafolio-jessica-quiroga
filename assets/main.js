@@ -137,3 +137,15 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { set(false); btn.focus(); } });
   panel.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
 })();
+
+(function () {
+  var hint = document.querySelector('.scroll-hint'), target = document.querySelector('.cases-head') || document.getElementById('casos');
+  if (!hint || !target) return;
+  function check() {
+    var top = target.getBoundingClientRect().top;
+    hint.classList.toggle('is-hidden', top < window.innerHeight * 0.85);
+  }
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check(); setTimeout(check, 700);
+})();
