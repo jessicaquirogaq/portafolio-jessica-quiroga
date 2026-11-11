@@ -123,3 +123,17 @@
   window.addEventListener('pageshow', toTop);
   [60, 250, 600].forEach(function (t) { setTimeout(toTop, t); });
 })();
+
+(function () {
+  var btn = document.querySelector('.menu-btn'), panel = document.getElementById('menu-panel');
+  if (!btn || !panel) return;
+  function set(open) {
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    panel.classList.toggle('open', open);
+
+  }
+  btn.addEventListener('click', function () { set(btn.getAttribute('aria-expanded') !== 'true'); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { set(false); btn.focus(); } });
+  panel.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+})();

@@ -1136,3 +1136,50 @@ ul.plain li::before { content: ""; position: absolute; left: 0; top: .6em; width
 @media (max-width:900px){.vin-gallery{grid-template-columns:1fr}}
 .ctx-art .spark4{width:100px;height:100px;display:block}
 .cv-dl{margin-top:28px}
+
+/* ---- Menú índice (hamburguesa) ---- */
+.menu-btn{width:46px;height:46px;border-radius:999px;border:1.5px solid #111;background:#fff;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;padding:0;transition:background .25s}
+.menu-btn span{display:block;width:18px;height:2px;background:#111;border-radius:2px;transition:transform .3s,opacity .2s}
+.menu-btn:hover{background:var(--lav-soft)}
+.menu-btn[aria-expanded="true"]{background:#111}
+.menu-btn[aria-expanded="true"] span{background:#fff}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.site-header{position:sticky}
+.menu-panel{background:#111;color:#fff;overflow:hidden;max-height:0;transition:max-height .5s cubic-bezier(.2,.8,.2,1)}
+.menu-panel[hidden]{display:block}
+.menu-panel.open{max-height:640px}
+.menu-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;padding:44px 0 52px;height:auto!important;align-items:start}
+.menu-main{display:flex;flex-direction:column;gap:4px}
+.menu-main a{color:#fff;text-decoration:none;font-size:clamp(2rem,4vw,3.2rem);font-weight:600;letter-spacing:-.03em;line-height:1.15;width:fit-content;transition:color .2s}
+.menu-main a:hover{color:var(--lav)}
+.menu-main a.is-current{color:var(--peach)}
+.menu-main .menu-cta{font-size:1.05rem;font-weight:500;letter-spacing:0;color:var(--lav);margin-top:18px}
+.menu-label{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--lav);margin:0 0 10px}
+.menu-cases a{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid rgba(255,255,255,.15);color:#fff;text-decoration:none;font-size:1.05rem;transition:padding .25s,color .2s}
+.menu-cases a:last-child{border-bottom:1px solid rgba(255,255,255,.15)}
+.menu-cases a b{font-family:'DM Mono',monospace;font-weight:400;font-size:.85rem;color:var(--lav);margin-right:8px}
+.menu-cases a small{color:rgba(255,255,255,.55);font-size:.9rem;white-space:nowrap}
+.menu-cases a:hover{padding-left:10px;color:var(--peach)}
+.menu-cases a.is-current{color:var(--peach)}
+@media (max-width:800px){.menu-grid{grid-template-columns:1fr;gap:28px;padding:28px 0 36px}.menu-panel.open{max-height:900px}.site-header .wrap{flex-wrap:nowrap}}
+@media (prefers-reduced-motion:reduce){.menu-panel,.menu-btn span{transition:none}}
+.site-header .wrap.menu-grid{display:grid;height:auto;justify-content:normal;align-items:start}
+.menu-panel{visibility:hidden;transition:max-height .5s cubic-bezier(.2,.8,.2,1),visibility 0s linear .5s}
+.menu-panel.open{visibility:visible;transition:max-height .5s cubic-bezier(.2,.8,.2,1),visibility 0s}
+.menu-btn,.menu-btn:hover,.menu-btn[aria-expanded="true"]{border:none;background:transparent}
+.menu-btn[aria-expanded="true"] span{background:#111}
+.menu-btn span{width:24px}
+.menu-btn:hover span{background:var(--orange)}
+.menu-btn:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+
+/* ---- Selector de idioma: texto + subrayado ---- */
+.lang{background:none;border:none;padding:0;gap:8px;display:flex;align-items:center;border-radius:0}
+.lang button,.lang button[aria-pressed="true"]{background:none;border:none;border-radius:0;padding:4px 0 6px;font-family:'DM Mono',monospace;font-size:13px;letter-spacing:.1em;color:rgba(17,17,17,.4);position:relative;cursor:pointer;transition:color .2s}
+.lang button[aria-pressed="true"]{color:#111}
+.lang button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:2px;background:#C2D62E;transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.3,1.4,.5,1)}
+.lang button[aria-pressed="true"]::after{transform:scaleX(1)}
+.lang button:hover{color:#111}
+.lang-sep{font-family:'DM Mono',monospace;font-size:13px;color:rgba(17,17,17,.3)}
+.head-right{gap:18px}
